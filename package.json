@@ -1,0 +1,23 @@
+{
+  "name": "servidor-express-v1",
+  "version": "1.0.0",
+  "description": "Este proyecto es un servidor básico construido con **Node.js** y **Express.js**. Implementa una arquitectura modular con rutas, controladores y middlewares para facilitar el mantenimiento y la escalabilidad.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dev-senior-estudiantes/servidor-express-v1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dev-senior-estudiantes/servidor-express-v1/issues"
+  },
+  "homepage": "https://github.com/dev-senior-estudiantes/servidor-express-v1#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
