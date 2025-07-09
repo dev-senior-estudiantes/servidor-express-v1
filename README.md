@@ -219,7 +219,7 @@ Refactorizar a estructura MVC + MongoDB cuando estén listos.
 | 👩‍💻 Colaborador Dev Senior | **nombre**        |                                             |
 | 👨‍💻 Colaborador Dev Senior | **nombre**        |                                             |
 | 👩‍🎓 Estudiante colaborador | **Mary Joseph**   | https://github.com/Emjey25                  |
-| 👨‍🎓 Estudiante colaborador | **nombre**        |                                             |
+| 👨‍🎓 Estudiante colaborador | **Andres Hernandez**        | https://github.com/EngineersSoftware                                             |
 
 📄 Licencia
 Este proyecto es de uso libre para fines educativos.
