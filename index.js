@@ -1,3 +1,4 @@
+
 // Importamos el modulo express
 const express = require('express');
 
@@ -12,6 +13,7 @@ const userRoutes = require('./routes/user.routes');
 
 //importamos el middleware de manejo de errores
 const logger = require('./middlewares/logger');
+
 
 app.get('/', (req, res) => {
   res.send('Hello World!')
