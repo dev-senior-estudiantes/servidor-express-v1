@@ -8,12 +8,6 @@ const app = express();
 // Definimos el puerto en el que escuchará el servidor
 const port = 3000;
 
-// Importamos las rutas del archivo user.routes.js
-const userRoutes = require('./routes/user.routes');
-
-//importamos el middleware de manejo de errores
-const logger = require('./middlewares/logger');
-
 
 app.get('/', (req, res) => {
   res.send('Hello World!')
