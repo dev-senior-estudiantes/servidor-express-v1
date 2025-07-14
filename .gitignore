@@ -1,1 +1,83 @@
+# Dependencias de Node.js
+# Ignorar dependencias instaladas por npm o yarn
+# Esto incluye node_mod.
+yarn.lock
 node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Archivos de logs
+# Ignorar archivos de logs generados por la aplicación
+# Esto incluye logs de errores, acceso y otros
+logs
+*.log
+
+# Archivos de entorno
+# Ignorar archivos de configuración de entorno
+# que contienen variables sensibles o de configuración  
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Archivos temporales del sistema operativo
+# Ignorar archivos temporales y de sistema que no son necesarios
+# para el proyecto y pueden ser generados por el sistema operativo
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Archivos de IDEs y editores
+# Ignorar configuraciones específicas de IDEs y editores
+# que no son relevantes para el proyecto
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Archivos de cobertura de tests
+# Ignorar archivos generados por herramientas de cobertura
+# de código como Istanbul o NYC
+coverage/
+.nyc_output
+
+# Archivos de distribución
+# Ignorar archivos generados durante el proceso de construcción
+# del proyecto, como los directorios de distribución
+dist/
+build/
+
+# Archivos de caché
+# Ignorar archivos de caché generados por herramientas
+# de construcción y empaquetado como Webpack, Parcel, etc.
+.cache/
+.parcel-cache/
+
+# Archivos de runtime
+# Ignorar archivos de runtime que pueden ser generados
+# por el entorno de ejecución, como PID files y lock files
+*.pid
+*.seed
+*.pid.lock
+
+# Archivos de package-lock (opcional, algunos prefieren incluirlo)
+# package-lock.json
+
+# Archivos específicos de Windows
+# Ignorar archivos y carpetas específicas de Windows
+$RECYCLE.BIN/
+Desktop.ini
+
+# Archivos de backup
+# Ignorar archivos de respaldo y copias de seguridad
+# como .bak, .backup, .old, etc.
+*.bak
+*.backup
+*.old

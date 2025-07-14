@@ -1,6 +1,6 @@
 # 🚀 Proyecto básico en Express.js con rutas, controladores y middlewares
 
-Este proyecto es un servidor básico construido con **Node.js** y **Express.js**. Implementa una arquitectura modular con rutas, controladores y middlewares para facilitar el mantenimiento y la escalabilidad.
+Este proyecto es un servidor express v1 construido con **Node.js** y **Express.js**. Implementa una arquitectura modular con rutas, controladores y middlewares para facilitar el mantenimiento y la escalabilidad.
 
 - `index.js` como punto de entrada
 - Controladores para separar la lógica
@@ -12,7 +12,7 @@ Este proyecto es un servidor básico construido con **Node.js** y **Express.js**
 ## 📁 Estructura del Proyecto
 
 ```bash
-mi-servidor-express/
+servidro-expresss-v1/
 │
 ├── index.js # Punto de entrada del servidor
 ├── routes/ # Define las rutas de la aplicación
@@ -213,13 +213,13 @@ Refactorizar a estructura MVC + MongoDB cuando estén listos.
 
 🧑‍💻 Autor y Colaboradores
 
-| Rol                       | Nombre completo   | GitHub / Contacto                           |
-| ------------------------- | ----------------- | ------------------------------------------- |
-| 👨‍💻 Autor principal        | **Carlos García** | https://github.com/carlosjuliogarciaorjuela |
-| 👩‍💻 Colaborador Dev Senior | **nombre**        |                                             |
-| 👨‍💻 Colaborador Dev Senior | **nombre**        |                                             |
-| 👩‍🎓 Estudiante colaborador | **Mary Joseph**   | https://github.com/Emjey25                  |
-| 👨‍🎓 Estudiante colaborador | **Andres Hernandez**        | https://github.com/EngineersSoftware                                             |
+| Rol                       | Nombre completo      | GitHub / Contacto                           |
+| ------------------------- | -------------------- | ------------------------------------------- |
+| 👨‍💻 Autor principal        | **Carlos García**    | https://github.com/carlosjuliogarciaorjuela |
+| 👩‍💻 Colaborador Dev Senior | **nombre**           |                                             |
+| 👨‍💻 Colaborador Dev Senior | **nombre**           |                                             |
+| 👩‍🎓 Estudiante colaborador | **Mary Joseph**      | https://github.com/Emjey25                  |
+| 👨‍🎓 Estudiante colaborador | **Andres Hernandez** | https://github.com/EngineersSoftware        |
 
 📄 Licencia
 Este proyecto es de uso libre para fines educativos.
