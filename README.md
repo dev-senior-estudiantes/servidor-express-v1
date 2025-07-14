@@ -1,4 +1,4 @@
-# 🚀 Proyecto básico en Express.js con rutas, controladores y middlewares
+# 🚀 Proyecto Servidor Express v1
 
 Este proyecto es un servidor express v1 construido con **Node.js** y **Express.js**. Implementa una arquitectura modular con rutas, controladores y middlewares para facilitar el mantenimiento y la escalabilidad.
 
