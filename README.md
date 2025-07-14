@@ -221,9 +221,6 @@ Refactorizar a estructura MVC + MongoDB cuando estén listos.
 | 👩‍🎓 Estudiante colaborador | **Mary Joseph**   | https://github.com/Emjey25                  |
 | 👨‍🎓 Estudiante colaborador | **Andres Hernandez**        | https://github.com/EngineersSoftware                                             |
 
-📄 Licencia
-Este proyecto es de uso libre para fines educativos.
-
 ## 📋 Pseudocódigo del Proyecto
 
 ```pseudocodigo
@@ -287,3 +284,7 @@ FLUJO DE PETICIÓN
     6. ENVIAR RESPUESTA AL CLIENTE
     7. REGISTRAR PETICIÓN COMPLETA
 ```
+
+📄 Licencia
+Este proyecto es de uso libre para fines educativos.
+
