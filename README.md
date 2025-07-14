@@ -57,17 +57,6 @@ cd mi-servidor-express
 npm init -y
 npm install express
 
-```
-
-📄 Desarrollo del Proyecto - Paso a Paso
-
-1. Inicializar Express
-
-```
-npm install express
-
-```
-
 ---
 
 ## 🧠 Propósito pedagógico de cada archivo
@@ -220,6 +209,7 @@ Refactorizar a estructura MVC + MongoDB cuando estén listos.
 | 👨‍💻 Colaborador Dev Senior | **nombre**           |                                             |
 | 👩‍🎓 Estudiante colaborador | **Mary Joseph**      | https://github.com/Emjey25                  |
 | 👨‍🎓 Estudiante colaborador | **Andres Hernandez** | https://github.com/EngineersSoftware        |
+| 👨‍🎓 Estudiante colaborador | **Oscar Lopez**      | https://github.com/OscarLLC                 |
 
 📄 Licencia
 Este proyecto es de uso libre para fines educativos.
