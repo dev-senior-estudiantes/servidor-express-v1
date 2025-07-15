@@ -221,5 +221,70 @@ Refactorizar a estructura MVC + MongoDB cuando estén listos.
 | 👩‍🎓 Estudiante colaborador | **Mary Joseph**      | https://github.com/Emjey25                  |
 | 👨‍🎓 Estudiante colaborador | **Andres Hernandez** | https://github.com/EngineersSoftware        |
 
+## 📋 Pseudocódigo del Proyecto
+
+```pseudocodigo
+// 🏠 ARCHIVO PRINCIPAL (index.js)
+// ✅ Configuración inicial del servidor
+INICIAR SERVIDOR EXPRESS
+    - IMPORTAR MÓDULOS NECESARIOS (express, rutas, middleware)
+    - CREAR INSTANCIA DE EXPRESS
+    - CONFIGURAR MIDDLEWARES BÁSICOS
+    
+// ⚙️ Configuración del servidor
+CONFIGURACIÓN DEL SERVIDOR
+    - PUERTO DE ESCUCHA (3000)
+    - MIDDLEWARE PARA JSON (express.json())
+    - MIDDLEWARE DE LOGGING PERSONALIZADO
+    
+// 📦 Configuración de rutas
+CONFIGURACIÓN DE RUTAS
+    - MONTAR RUTAS DE USUARIOS EN '/api/users'
+    - RUTA RAÍZ '/' CON MENSAJE DE BIENVENIDA
+    - MANEJADOR DE RUTAS NO ENCONTRADAS (404)
+    
+// 🚀 Iniciar servidor
+INICIAR SERVIDOR
+    - ESCUCHAR EN PUERTO CONFIGURADO
+    - MOSTRAR MENSAJE DE INICIO EN CONSOLA
+    - REGISTRAR INICIO DEL SERVIDOR
+
+// 📁 ARCHIVO DE RUTAS (user.routes.js)
+// 🔍 Definición de rutas de usuarios
+ESTRUCTURA DE RUTAS
+    - IMPORTAR EXPRESS Y CREAR ROUTER
+    - IMPORTAR CONTROLADOR DE USUARIOS
+    - DEFINIR RUTA GET PARA OBTENER USUARIOS
+    - EXPORTAR ROUTER PARA USO EN SERVIDOR
+
+// 💾 ARCHIVO DE CONTROLADOR (user.controllers.js)
+// 🤖 Lógica de negocio para usuarios
+CONTROLADOR DE USUARIOS
+    - FUNCIÓN ASÍNCRONA PARA GET USUARIOS
+    - LISTA FICTICIA DE USUARIOS CON ID Y NOMBRE
+    - MANEJO DE ERRORES CON CÓDIGO 500
+    - RESPUESTA JSON CON MENSAJE Y DATOS
+
+// 🔍 ARCHIVO MIDDLEWARE (logger.js)
+// 📝 Registro de peticiones
+MIDDLEWARE DE LOGGING
+    - CAPTURAR FECHA Y HORA (ISO)
+    - OBTENER MÉTODO HTTP (GET, POST, etc.)
+    - OBTENER RUTA SOLICITADA
+    - LOGUEAR INFORMACIÓN EN CONSOLA
+    - CONTINUAR CON SIGUIENTE MIDDLEWARE
+
+// 🔄 FLUJO DE PETICIÓN (DESDE EL CLIENTE)
+FLUJO DE PETICIÓN
+    1. PETICIÓN RECIBIDA
+    2. PASAR POR MIDDLEWARE DE LOGGING
+    3. PROCESAR JSON SI ES NECESARIO
+    4. ENVIAR A LA RUTA CORRESPONDIENTE
+    5. PROCESAR EN EL CONTROLADOR
+    6. ENVIAR RESPUESTA AL CLIENTE
+    7. REGISTRAR PETICIÓN COMPLETA
+```
+
 📄 Licencia
 Este proyecto es de uso libre para fines educativos.
+
