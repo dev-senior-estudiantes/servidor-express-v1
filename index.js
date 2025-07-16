@@ -1,7 +1,10 @@
 
 // Importamos el modulo express
 const express = require('express');
-import  { logger } from './middlewares/logger'
+
+const logger = require('./middlewares/logger')
+
+const userRoutes = require('./routes/user.routes')
 
 // Creamos una instancia de express
 const app = express();
@@ -9,13 +12,14 @@ const app = express();
 // Definimos el puerto en el que escuchará el servidor
 const port = 3000;
 
+///Meddleware
+app.use(express.json()); //para parcirar la respuesta en formato obj mas legible
+
 //Usuamos el Meddleware 
 app.use(logger)
 
-//Probando el Meddleware
-app.get('/', (req, res) => {
-  res.send('Usando el Meddleware')
-})
+///usuando el Meddleware
+app.use('/getUsers', userRoutes) 
 
 // INICIAR el servidor en el puerto definido
 app.listen(port, () => {
