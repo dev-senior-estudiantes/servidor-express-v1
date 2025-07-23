@@ -1,2 +1,3 @@
-### 
+### Hacemos una petición GET a la URL http://localhost:3000/api/users
+# Esto nos devolvera la lista de usuarios en formato JSON
 GET http://localhost:3000/api/users

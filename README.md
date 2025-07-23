@@ -21,6 +21,8 @@ servidro-expresss-v1/
 │ └── user.controller.js
 ├── middlewares/ # Funciones middleware (registro, validación, etc.)
 │ └── logger.js
+├── RestClient/ # Peticiones de la ruta GET
+    └── server.http
 ```
 
 ---
@@ -72,12 +74,13 @@ npm install express
 
 ## 🧠 Propósito pedagógico de cada archivo
 
-| Archivo                  | Rol educativo                                |
-| ------------------------ | -------------------------------------------- |
-| `index.js`               | Punto de entrada, conecta todo el sistema.   |
-| `user.controller.js`     | Separa la lógica de qué hacer con los datos. |
-| `user.routes.js`         | Define los caminos de entrada a la app.      |
-| `logger.js` (middleware) | Control sobre qué pasa con cada petición.    |
+| Archivo                  | Rol educativo                                     |
+| ------------------------ | ------------------------------------------------- |
+| `index.js`               | Punto de entrada, conecta todo el sistema.        |
+| `user.controller.js`     | Separa la lógica de qué hacer con los datos.      |
+| `user.routes.js`         | Define los caminos de entrada a la app.           |
+| `logger.js` (middleware) | Control sobre qué pasa con cada petición.         |
+| `server.http`            | Peticion sobre la ruta GET por el puerto asignado |
 
 ---
 
@@ -149,11 +152,19 @@ EXPORTAR el middleware para usarlo en otros archivos
 
 ```
 
+📄RestClient/server.http — simulador para realizar las peticiones
+
+```
+DEFINIR la ruta por la cual vas a realizar la peticion, seguida de el puerto que has asignado
+
+EJM:
+GET: http://localhost:3000
+```
+
 ▶️ Ejecutar el proyecto
 
 ```
 node index.js
-
 ```
 
 Deberías ver el mensaje:
@@ -230,19 +241,19 @@ INICIAR SERVIDOR EXPRESS
     - IMPORTAR MÓDULOS NECESARIOS (express, rutas, middleware)
     - CREAR INSTANCIA DE EXPRESS
     - CONFIGURAR MIDDLEWARES BÁSICOS
-    
+
 // ⚙️ Configuración del servidor
 CONFIGURACIÓN DEL SERVIDOR
     - PUERTO DE ESCUCHA (3000)
     - MIDDLEWARE PARA JSON (express.json())
     - MIDDLEWARE DE LOGGING PERSONALIZADO
-    
+
 // 📦 Configuración de rutas
 CONFIGURACIÓN DE RUTAS
     - MONTAR RUTAS DE USUARIOS EN '/api/users'
     - RUTA RAÍZ '/' CON MENSAJE DE BIENVENIDA
     - MANEJADOR DE RUTAS NO ENCONTRADAS (404)
-    
+
 // 🚀 Iniciar servidor
 INICIAR SERVIDOR
     - ESCUCHAR EN PUERTO CONFIGURADO
@@ -274,6 +285,10 @@ MIDDLEWARE DE LOGGING
     - LOGUEAR INFORMACIÓN EN CONSOLA
     - CONTINUAR CON SIGUIENTE MIDDLEWARE
 
+// 👐 PAQUETE RestClient (server.http)
+    - Realizamos una petición GET en el puerto asignado para verificar que nuestra ruta esté funcionando correctamente.
+    Esto nos permite obtener la lista de usuarios y también simular errores para probar el flujo de la petición GET.
+
 // 🔄 FLUJO DE PETICIÓN (DESDE EL CLIENTE)
 FLUJO DE PETICIÓN
     1. PETICIÓN RECIBIDA
@@ -287,4 +302,3 @@ FLUJO DE PETICIÓN
 
 📄 Licencia
 Este proyecto es de uso libre para fines educativos.
-
