@@ -23,9 +23,11 @@ app.use('/getUsers', userRoutes)
 
 // INICIAR el servidor en el puerto definido
 app.listen(port, () => {
-  // MOSTRAR en consola que el servidor está corriendo
+  // MOSTRAR en consola que el servidor está corriendo en el puerto 3000
   console.log(` HOLA MUNDO DESDE EL PUERTO ${port}`)
 })
+
+
 
 
 
