@@ -1,4 +1,4 @@
-# 🚀 Proyecto básico en Express.js con rutas, controladores y middlewares
+# 🚀 Proyecto Servidor Express v1
 
 Este proyecto es un servidor express v1 construido con **Node.js** y **Express.js**. Implementa una arquitectura modular con rutas, controladores y middlewares para facilitar el mantenimiento y la escalabilidad.
 
@@ -58,17 +58,6 @@ cd mi-servidor-express
 ```
 npm init -y
 npm install express
-
-```
-
-📄 Desarrollo del Proyecto - Paso a Paso
-
-1. Inicializar Express
-
-```
-npm install express
-
-```
 
 ---
 
@@ -231,6 +220,7 @@ Refactorizar a estructura MVC + MongoDB cuando estén listos.
 | 👨‍💻 Colaborador Dev Senior | **nombre**           |                                             |
 | 👩‍🎓 Estudiante colaborador | **Mary Joseph**      | https://github.com/Emjey25                  |
 | 👨‍🎓 Estudiante colaborador | **Andres Hernandez** | https://github.com/EngineersSoftware        |
+| 👨‍🎓 Estudiante colaborador | **Oscar Lopez**      | https://github.com/OscarLLC                 |
 
 ## 📋 Pseudocódigo del Proyecto
 

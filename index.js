@@ -5,39 +5,44 @@
 
 // Importamos los módulos necesarios
 const express = require('express');
-const userRoutes = require('./routes/user.routes');
-const logger = require('./middlewares/logger');
 
-// Creamos una instancia de express que será nuestro servidor
-const app = express();
+const logger = require('./middlewares/logger')
+
+const userRoutes = require('./routes/user.routes')
+
 
 // Configuración del servidor:
 // 1). Puerto por defecto donde escuchará el servidor
 const port = 3000;
 
-// 2). Middleware para parsear el cuerpo de las peticiones JSON
-app.use(express.json());
 
-// 3). Middleware personalizado para logging de peticiones
-app.use(logger);
+// Creamos una instancia de express que será nuestro servidor
+const app = express();
 
-// 4). Montamos las rutas de usuarios en el endpoint /api/users
-app.use('/api/users', userRoutes);
+//parsiamos el cuerpo de la petiocion
+app.use(express.json())
 
-// 5). Ruta raíz
+//usamos el logger personalizado 
+app.use(logger)
+
+//ruta de la api/user en el endpoint
+app.use('/api/users', userRoutes)
+
 app.get('/', (req, res) => {
-  res.send('Bienvenido a la API de Usuarios');
+  res.send('API DE USUARIOS!')
 });
 
-// 6). Manejo de rutas no encontradas
-app.use((req, res) => {
+app.use((req, res) =>{
   res.status(404).json({
-    message: 'Ruta no encontrada'
+    message: 'ruta no encontrada'
   });
 });
 
 // 7). INICIAR el servidor en el puerto definido
 app.listen(port, () => {
   // MOSTRAR en consola que el servidor está corriendo
-  console.log(`Servidor corriendo en http://localhost:${port}`);
+  console.log(` HOLA MUNDO DESDE EL PUERTO ${port}`)
 });
+
+
+

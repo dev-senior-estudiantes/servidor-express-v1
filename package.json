@@ -19,5 +19,6 @@
   "homepage": "https://github.com/dev-senior-estudiantes/servidor-express-v1#readme",
   "dependencies": {
     "express": "^5.1.0"
-  }
+  },
+  "type": "commonjs"
 }

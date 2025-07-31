@@ -21,6 +21,7 @@ const getUsers = async (req, res) => {
             message: 'Lista de usuarios',
             users
         });
+        //capturamos el error
     } catch (error) {
         // En caso de error, respondemos con un código 500 y un mensaje de error
         res.status(500).json({

@@ -1,7 +1,6 @@
 // Importamos express y creamos un router para manejar las rutas de usuarios
 const express = require('express');
 const router = express.Router();
-// Importamos el controlador de usuarios que manejará las peticiones
 const { getUsers } = require('../controllers/user.controllers');
 
 // Definimos la ruta GET para obtener la lista de usuarios
