@@ -1,33 +1,48 @@
+/*
+ * Archivo principal del servidor Express
+ * Configura y arranca la aplicación
+ */
 
-// Importamos el modulo express
+// Importamos los módulos necesarios
 const express = require('express');
 
 const logger = require('./middlewares/logger')
 
 const userRoutes = require('./routes/user.routes')
 
-// Creamos una instancia de express
-const app = express();
 
-// Definimos el puerto en el que escuchará el servidor
+// Configuración del servidor:
+// 1). Puerto por defecto donde escuchará el servidor
 const port = 3000;
 
-///Meddleware
-app.use(express.json()); //para parcirar la respuesta en formato obj mas legible
 
-//Usuamos el Meddleware 
+// Creamos una instancia de express que será nuestro servidor
+const app = express();
+
+//parsiamos el cuerpo de la petiocion
+app.use(express.json())
+
+//usamos el logger personalizado 
 app.use(logger)
 
-///usuando el Meddleware
-app.use('/getUsers', userRoutes) 
+//ruta de la api/user en el endpoint
+app.use('/api/users', userRoutes)
 
-// INICIAR el servidor en el puerto definido
+app.get('/', (req, res) => {
+  res.send('API DE USUARIOS!')
+});
+
+app.use((req, res) =>{
+  res.status(404).json({
+    message: 'ruta no encontrada'
+  });
+});
+
+// 7). INICIAR el servidor en el puerto definido
 app.listen(port, () => {
-  // MOSTRAR en consola que el servidor está corriendo en el puerto 3000
+  // MOSTRAR en consola que el servidor está corriendo
   console.log(` HOLA MUNDO DESDE EL PUERTO ${port}`)
-})
-
-
+});
 
 
 
